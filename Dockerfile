@@ -1,6 +1,8 @@
 FROM ruby:2.6-alpine
 
-RUN gem install fakeit
+ARG version
+
+RUN gem install fakeit -v $version
 
 EXPOSE 8080
 
