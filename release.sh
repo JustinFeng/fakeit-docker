@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 if [ "$#" -ne 1 ]; then
   echo "Usage: $0 <Version>" >&2
   exit 1
